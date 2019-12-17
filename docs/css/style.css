@@ -1,25 +1,41 @@
-.flex-container {
-	display: flex;
-	width: 50%;
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+
+.container {
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
   }
-  
+
   .image {
-	display: block;
 	width: 100%;
 	height: auto;
   }
   
-  .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+  .base {
 	height: 100%;
-	width: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .overlay {
+	height: 100%;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #008CBA;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   
   .container:hover .overlay {
