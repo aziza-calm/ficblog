@@ -1,17 +1,20 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
+	grid-column-gap: 5px;
 	padding: 10px;
 }
 
 .container {
+	height: 100px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
+	margin: 20px;
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
 	overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 90%;
   }
 
   .image {
@@ -21,7 +24,7 @@
   
   .base {
 	height: 100%;
-    width: 50%;
+    width: 100%;
     position: absolute;
     right: 0;
     top: 0;
@@ -32,7 +35,7 @@
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #008CBA;
-    width: 50%;
+    width: 100%;
     position: absolute;
     right: 0;
     top: 0;
